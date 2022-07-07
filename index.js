@@ -15,3 +15,14 @@ $(function () {
 $(window).on("load", function () {
   new WOW().init();
 });
+
+function submit() {
+  let name = document.getElementById("name").value;
+  let email = document.getElementById("email").value;
+
+  if (!name || !email) {
+    document.getElementById("span-name").innerHTML = "The field is required.";
+    document.getElementById("span-email").innerHTML = "The field is required.";
+    document.getElementById("error-mess").style.display = "block";
+  }
+}

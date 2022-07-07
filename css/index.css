@@ -36,6 +36,14 @@ li {
   flex-direction: row;
   justify-content: space-between;
 }
+@media screen and (max-width: 1200px) {
+  .header .container {
+    justify-content: flex-start;
+    height: 50px;
+    background-color: #fff;
+    padding: 0 50px;
+  }
+}
 @media screen and (max-width: 992px) {
   .header .container {
     justify-content: flex-start;
@@ -554,6 +562,16 @@ li {
   border: none;
   outline: none;
 }
+.submit .container .submit-row .item-right .submit .form-content .form-body .span-row {
+  display: flex;
+}
+.submit .container .submit-row .item-right .submit .form-content .form-body .span-row .span-name {
+  color: #b61984;
+}
+.submit .container .submit-row .item-right .submit .form-content .form-body .span-row .span-email {
+  padding-left: 70px;
+  color: #b61984;
+}
 .submit .container .submit-row .item-right .submit .form-content .form-body .contact-language {
   margin-top: 20px;
   width: 100%;
@@ -589,11 +607,7 @@ li {
   padding: 30px 0 0 0;
   width: 100%;
 }
-.submit .container .submit-row .item-right .submit .form-content .form-footer a {
-  text-decoration: none;
-  font-size: 12px;
-}
-.submit .container .submit-row .item-right .submit .form-content .form-footer a .button {
+.submit .container .submit-row .item-right .submit .form-content .form-footer .button {
   width: 40%;
   text-align: center;
   background-color: #b61984;
@@ -610,27 +624,34 @@ li {
   transition: background-size 0.5s, color 0.5s;
 }
 @media screen and (max-width: 992px) {
-  .submit .container .submit-row .item-right .submit .form-content .form-footer a .button {
+  .submit .container .submit-row .item-right .submit .form-content .form-footer .button {
     width: 100%;
   }
 }
 @media screen and (max-width: 768px) {
-  .submit .container .submit-row .item-right .submit .form-content .form-footer a .button {
+  .submit .container .submit-row .item-right .submit .form-content .form-footer .button {
     width: 100%;
   }
 }
 @media screen and (max-width: 576px) {
-  .submit .container .submit-row .item-right .submit .form-content .form-footer a .button {
+  .submit .container .submit-row .item-right .submit .form-content .form-footer .button {
     width: 100%;
   }
 }
-.submit .container .submit-row .item-right .submit .form-content .form-footer a .button:hover {
+.submit .container .submit-row .item-right .submit .form-content .form-footer .button:hover {
   background-color: none;
   color: #b61984;
 }
-.submit .container .submit-row .item-right .submit .form-content .form-footer a .button:hover {
+.submit .container .submit-row .item-right .submit .form-content .form-footer .button:hover {
   background-size: 100% 100%;
   color: #b61984;
+}
+.submit .container .submit-row .item-right .submit .form-content .form-footer .error-mess {
+  display: none;
+  border: 3px solid #ffd043;
+  margin-top: 50px;
+  padding: 10px 20px;
+  font-size: 12px;
 }
 
 .footer .background-purple-wave-2 {
@@ -638,7 +659,12 @@ li {
 }
 .footer .background-purple-wave-2 img {
   position: relative;
-  top: -250px;
+  top: -210px;
+}
+@media screen and (max-width: 1200px) {
+  .footer .background-purple-wave-2 img {
+    top: -195px;
+  }
 }
 @media screen and (max-width: 992px) {
   .footer .background-purple-wave-2 img {
@@ -721,9 +747,15 @@ li {
   padding: 10px 0;
   border-bottom: 0.5px solid rgba(0, 0, 0, 0.2);
 }
+.footer .main .container .row .company ul li a:hover {
+  color: #eaeae9;
+}
 .footer .main .container .row .links ul li {
   padding: 10px 0;
   border-bottom: 0.5px solid rgba(0, 0, 0, 0.2);
+}
+.footer .main .container .row .links ul li a:hover {
+  color: #eaeae9;
 }
 .footer .main .container .row .subcribe {
   width: 100%;
