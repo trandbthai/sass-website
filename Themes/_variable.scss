@@ -1,0 +1,49 @@
+// Color
+$purple-primary: #b61984;
+$purple-secondary: #dcd1f3;
+$black-primary: #000;
+$white-primary: #fff;
+$yellow-primary: #ffd043;
+$gray-primary: #eaeae9;
+
+// Font-size
+$text-sm: 12px;
+$text-md: 1rem;
+$text-lg: 20px;
+$text-xl: 30px;
+$text-2xl: 40px;
+$text-3xl: 50px;
+$text-4xl: 60px;
+$text-title: 6.4rem;
+
+// Font-weight
+$text-light: 200;
+$text-normal: 400;
+$text-bold: 600;
+$text-extraBold: 800;
+
+//image
+
+//Schedules
+$schedule01: "http://tabula.bold-themes.com/wavy/wp-content/uploads/sites/3/2019/03/inner_01.jpg";
+$schedule02: "http://tabula.bold-themes.com/wavy/wp-content/uploads/sites/3/2019/03/inner_02.jpg";
+$schedule03: "http://tabula.bold-themes.com/wavy/wp-content/uploads/sites/3/2019/03/inner_03.jpg";
+
+@mixin text($fz, $fw, $c) {
+  font-size: $fz;
+  font-weight: $fw;
+  color: $c;
+}
+
+@mixin button($bg, $pd, $b, $br, $fz, $fw, $c, $bg-hover, $c-hover) {
+  background-color: $bg;
+  padding: $pd;
+  border: $b;
+  border-radius: $br;
+  cursor: pointer;
+  @include text($fz, $fw, $c);
+  &:hover {
+    background-color: $bg-hover;
+    color: $c-hover;
+  }
+}
